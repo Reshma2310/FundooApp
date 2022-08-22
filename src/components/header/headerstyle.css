@@ -1,0 +1,128 @@
+.mainHeaderH {
+    width: 100vw;
+    height: 8vh;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #dadce0; 
+}
+.headerContentH {
+    width: 98%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.headerOneH {
+    width: 10%;
+    height: 80%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imgClassH {
+    width: 24%;
+    height: 84%;    
+    /* border: 1px solid blue; */
+}
+.imgClassH img {
+    width: 100%;
+    height: 100%;
+}
+.textH {
+    font-size: x-large;
+    color: #5f6368;
+}
+.firstSpaceH {
+    width: 5%;
+    height: 100%;
+    /* border: 1px solid blueviolet; */
+}
+.searchBarH {
+    width: 47%;
+    height: 80%;
+    /* border: 1px solid blueviolet; */
+    background-color: rgba(0,0,0,.05);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.searchMainH {
+    width: 80%;
+    height: 80%;
+    /* border: 1px solid blueviolet; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;    
+}
+.searchsymH {
+    width: 10%;
+    height: 70%;
+    /* border: 1px solid yellow; */
+}
+.searchTextH {
+    width: 90%;
+    height: 85%;
+    text-align: start;
+    color: #5f6368;
+    font-size: medium;
+    /* border: 1px solid red */
+}
+.secondSpaceH {
+    width: 12%;
+    height: 100%;
+    /* border: 1px solid red */
+}
+.iconsMainH {
+    width: 15%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.iconsContentH {
+    width: 20%;
+    /* border: 1px solid blue; */
+}
+.headerEndH {
+    width: 10%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.endContentH {
+    width: 90%;
+    height: 75%;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.endImgH {
+    width: 36%;
+}
+.endImgH img {
+    width: 100%;  
+}
+.personH {
+    width: 25%;
+}
+.personH img {
+    width: 100%;
+    border-radius: 50%;
+}

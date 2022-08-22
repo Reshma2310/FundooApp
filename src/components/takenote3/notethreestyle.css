@@ -1,0 +1,77 @@
+.wtspace3 {
+    width: 15vh;
+    height: 2vh;
+    border: 0px solid black;    
+}
+.thirdContent {
+    width: 32vh;
+    height: 17vh;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start; 
+    margin-left:10px;
+}
+.mainNote3 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #cecdcd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #e0e0e0;
+    display: flex;   
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.blackTick3 {
+    width: 100%;
+    height: 15%;    
+    text-align: start;
+    /* border: 1px solid orange; */
+}
+.thirdHeader {
+    width: 90%;
+    height: 50%;
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.titleText3 {
+    width: 100%;
+    height: 40%; 
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+}
+.nameTitle3 {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid pink; */
+    text-align: start;
+}
+.pinIcon3 {
+    width: 20%;    
+    /* border: 1px solid pink; */
+}
+.takeText3 {
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid blue; */
+    text-align: start;
+}
+.iconsField3 {
+    width: 90%;
+    height: 30%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.iconSym3 {
+    width: 12%;
+}
