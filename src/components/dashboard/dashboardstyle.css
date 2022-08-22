@@ -1,0 +1,50 @@
+.dashBoardMain {
+    max-width: 65vw;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction:row;
+    flex-grow: 1;
+    margin-top: 10px;
+    margin-left:320px !important;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+} 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .dashBoardMain {
+        width: 75%;
+        height: auto;
+        border: 0px solid black;
+        display: flex;
+        flex-direction:row;
+        flex-grow: 1;
+        margin-top: 0px;
+        margin-left:60px !important;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .dashBoardMain {
+        max-width: 70vw;
+        margin-left:50px !important;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .dashBoardMain {
+        max-width: 70vw;
+        margin-left:100px !important;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+    .dashBoardMain {
+        max-width: 70vw;
+        margin-left:150px !important;
+    }
+}
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    .dashBoardMain {
+        max-width: 85vw;
+        margin-left:100px !important;
+    }
+}

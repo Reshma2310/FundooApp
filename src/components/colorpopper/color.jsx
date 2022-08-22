@@ -33,7 +33,7 @@ function ColorPopper(props) {
   const id = open ? 'simple-popper' : undefined;
 
     return (
-        <div>
+        <div style={{position: 'relative', zIndex:35}}>
             <ColorLensOutlinedIcon onClick={handleClick} fontSize="small" color="action" 
                 sx={{ "&:hover": { backgroundColor: "#dcdde0", padding:"0px", borderRadius: "50%" } }}/>
             <Popper id={id} open={open} anchorEl={anchorEl}>

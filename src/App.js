@@ -7,6 +7,7 @@ import NoteOne from './components/takenote1/noteone';
 import NoteTwo from './components/takenote2/notetwo';
 import NoteThree from './components/takenote3/notethree';
 import DashBoard from './components/dashboard/dashboard';
+import RouterOne from './components/router/router';
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
       {/* <NoteOne /> */}
       {/* <NoteTwo /> */}
       {/* <NoteThree /> */}
-      <DashBoard />
+      {/* <DashBoard /> */}
+      <RouterOne />
     </div>
   );
 }

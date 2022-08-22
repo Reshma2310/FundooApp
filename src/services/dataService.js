@@ -34,4 +34,11 @@ export const deleteNotes = (noteObj) => {
      return response
 }
 
+export const updateNotes = (noteObj) => {
+    let response = axios.post('http://fundoonotes.incubation.bridgelabz.com/api/notes/updateNotes',noteObj,
+     headerConfig)
+    //  console.log(noteObj, 'dataservice page...')
+     return response
+}
+
 

@@ -1,5 +1,5 @@
 .noteTwoMain {
-    width: 100vw;
+    width: 40vw;
     height: 18vh;
     /* border: 1px solid black; */
     display: flex;
@@ -8,18 +8,18 @@
     position: relative;
 }
 .noteTwoContent {
-    width: 40%;
+    width: 100%;
     height: 100%;
     border: 1px solid #cecdcd;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px #e0e0e0;
+    /*border-radius: 8px;
+    box-shadow: 2px 2px 2px #e0e0e0; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 0px;
-    right: 330px;
+    position: relative;
+    left: 600px;
+    bottom: 26px;
 }
 .twoTextContent {
     width: 95%;
@@ -85,4 +85,64 @@
 .iconSym2 {
     width: 11%;
     /* border: 1px solid yellow; */
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .noteTwoMain {
+        width: 75vw;
+        height: 25vh;        
+    }
+    .noteTwoContent {
+        left: 60px;
+        bottom: 35px;
+    }
+    .twoTextContent {
+        height: 45%;
+        align-items: center;
+        /* border: 1px solid blue; */
+    }
+    .titleText2 {
+        width: 95%;
+    }
+    .takeText2 {
+        width: 95%;
+    }
+    .noteTwoIcons {
+        height: 45%;
+        /* border: 1px solid blue; */
+        flex-direction: column;
+    }
+    .footerIcons2 {
+        width: 100%;
+        height: 50%;
+        justify-content: space-evenly;
+    }
+    .btnClass2 {
+        width: 100%;
+        height: 50%;
+        text-align: end;
+    }
+    #btnId2 {
+        width: 20%;
+        text-align: end;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .noteTwoMain {
+        width: 75vw;
+        height: 20vh;
+    }
+    .noteTwoContent {
+        left: 60px;
+        bottom: 35px;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .noteTwoMain {
+        width: 55vw;
+        height: 20vh;
+    }
+    .noteTwoContent {
+        left: 205px;
+        bottom: 35px;
+    }
 }
