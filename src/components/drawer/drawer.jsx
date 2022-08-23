@@ -12,6 +12,7 @@ import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
 import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
+import { connect } from 'react-redux';
 
 const drawerWidth = 240;
 
@@ -25,6 +26,9 @@ const openedMixin = (theme) => ({
         duration: theme.transitions.duration.enteringScreen,
     }),
     overflowX: 'hidden',
+    ['@media only screen and (min-width: 320px) and (max-width: 480px)']: {
+        marginTop: '40',
+    },
 });
 
 const closedMixin = (theme) => ({
@@ -58,7 +62,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
     }),
 );
 
-export default function DrawerOne(props) {
+function DrawerOne(props) {
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
 
@@ -72,6 +76,10 @@ export default function DrawerOne(props) {
 
     const selectOption = (noteOption) => {
         props.listenToDrawer(noteOption)
+        props.dispatch({
+            // ES6 feature
+            type: `${noteOption}`
+        })
     }
 
     return (
@@ -120,3 +128,5 @@ export default function DrawerOne(props) {
         </Box>
     );
 }
+
+export default connect()(DrawerOne)

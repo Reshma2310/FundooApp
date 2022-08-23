@@ -8,6 +8,8 @@ import NoteTwo from './components/takenote2/notetwo';
 import NoteThree from './components/takenote3/notethree';
 import DashBoard from './components/dashboard/dashboard';
 import RouterOne from './components/router/router';
+import store from './components/redux/store';
+import { Provider } from 'react-redux';
 
 function App() {
   return (
@@ -33,7 +35,9 @@ function App() {
       {/* <NoteTwo /> */}
       {/* <NoteThree /> */}
       {/* <DashBoard /> */}
-      <RouterOne />
+      <Provider store = {store}>
+        <RouterOne />
+      </Provider>
     </div>
   );
 }

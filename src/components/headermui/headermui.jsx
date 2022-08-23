@@ -16,13 +16,14 @@ import ViewStreamSharpIcon from '@mui/icons-material/ViewStreamSharp';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import AppsSharpIcon from '@mui/icons-material/AppsSharp';
 import { makeStyles } from '@mui/styles';
+import { connect } from 'react-redux';
 
 const useStyle = makeStyles({
     headerAppMain: {        
         width: '4%',        
     },
     headerAppText: {
-        width: '4%',
+        width: '10%',
     },
     ['@media only screen and (min-width: 320px) and (max-width: 480px)']: {
         headerAppMain: {
@@ -114,7 +115,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
 }));
 
-export default function HeaderAppBar(props) {
+function HeaderAppBar(props) {
 
     const classes = useStyle()
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -259,10 +260,10 @@ export default function HeaderAppBar(props) {
                             noWrap
                             component="div"
                             color="#5f6368"
-                            sx={{ display: { xs: 'none', sm: 'block' }, border: '0px solid blue' }}
+                            // sx={{ display: { xs: 'none', sm: 'block' }, border: '0px solid blue' }}
                             className={classes.headerAppText}
                         >
-                            Keep
+                            {/* Keep */}{props.label}
                         </Typography>
                     {/* </Box> */}
                     <Box sx={{ width: '5%', display: { xs: 'none', sm: 'none', md: 'block' } }} />
@@ -346,3 +347,10 @@ export default function HeaderAppBar(props) {
         </Box>
     );
 }
+
+const mapStateToProps = (state) => {
+    return{
+        label: state.drawerReducer.label
+    }
+}
+export default connect(mapStateToProps)(HeaderAppBar)
